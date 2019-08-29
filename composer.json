@@ -1,0 +1,37 @@
+{
+    "name": "rorecek/laravel-autoincrement",
+    "description": "Set table AUTO_INCREMENT values in your Laravel application",
+    "keywords": ["laravel", "mysql", "autoincrement", "auto-increment", "auto_increment", "id"],
+    "homepage": "https://github.com/rorecek/laravel-autoincrement",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Rorecek",
+            "email": "info@laravelist.com",
+            "homepage": "https://laravelist.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.1",
+        "laravel/framework": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rorecek\\AutoIncrement\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rorecek\\AutoIncrement\\AutoIncrementServiceProvider"
+            ],
+            "aliases": {
+                "AutoIncrement": "Rorecek\\AutoIncrement\\Facades\\AutoIncrement"
+            }
+        }
+    }
+}
